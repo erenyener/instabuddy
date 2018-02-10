@@ -1,14 +1,12 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
-
 import HomePage from './components/pages/HomePage';
 import LoginPage from './components/pages/LoginPage';
-
+import {AppRoute, EmptyLayout, MainLayout} from './components/layouts/index';
 
 const App = () => (
     <div>
-        <Route path='/' exact component={HomePage} />
-        <Route path='/login' exact component={LoginPage} />
+        <AppRoute exact path="/" layout={MainLayout} component={HomePage} />
+        <AppRoute exact path="/login" layout={EmptyLayout} component={LoginPage} />
     </div>
 );
 
