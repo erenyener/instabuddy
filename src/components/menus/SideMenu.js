@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon, Menu, Divider, Container } from 'semantic-ui-react'
+import { Icon, Menu, Container } from 'semantic-ui-react'
 
 class SideMenu extends React.Component {
 
@@ -17,7 +17,6 @@ class SideMenu extends React.Component {
                     <Icon name='instagram' size='big'/>
                 </div>
 
-                <Divider />
                 <Menu.Item name='plus' active={activeItem === 'plus'} onClick={this.handleItemClick}>
                   <Icon name='plus' />
                 </Menu.Item>

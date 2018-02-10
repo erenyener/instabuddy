@@ -7,9 +7,9 @@ const MainLayout = props => (
   <div>
     <HeaderMenu />
     <SideMenu />
-    <Container>
+    <div style={{marginLeft:'85px', padding:'20px'}}>
         {props.children}
-    </Container>
+    </div>
   </div>
 )
 

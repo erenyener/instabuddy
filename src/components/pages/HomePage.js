@@ -8,7 +8,7 @@ import { Grid, Segment } from 'semantic-ui-react'
 class HomePage extends React.Component {
     render () {
         return (
-            <Grid columns='equal'>
+            <Grid stackable columns='equal'>
                 <Grid.Row>
                       <Grid.Column>
                           <Post></Post>
