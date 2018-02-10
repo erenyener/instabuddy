@@ -11,14 +11,15 @@ class HomePage extends React.Component {
             <Grid stackable columns='equal'>
                 <Grid.Row>
                       <Grid.Column>
+                        <Upload></Upload>
+                      </Grid.Column>
+                      <Grid.Column>
                           <Post></Post>
                       </Grid.Column>
                       <Grid.Column>
                           <Preview></Preview>
                       </Grid.Column>
-                      <Grid.Column>
-                          <Upload></Upload>
-                      </Grid.Column>
+
                     </Grid.Row>
             </Grid>
         );

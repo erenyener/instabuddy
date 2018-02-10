@@ -7,9 +7,16 @@ class Preview extends React.Component {
 
   render(){
     return(
-      <div>
-        Preview
-      </div>
+      <Card fluid>
+        <Card.Content>
+          <Card.Header>
+             Preview
+          </Card.Header>
+        </Card.Content>
+        <Card.Content>
+
+        </Card.Content>
+      </Card>
     )
 
   }
