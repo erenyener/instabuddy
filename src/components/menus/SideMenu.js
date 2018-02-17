@@ -17,7 +17,7 @@ class SideMenu extends React.Component {
                     <Icon name='instagram' size='big'/>
                 </div>
 
-                <Menu.Item name='plus' active={activeItem === 'plus'} onClick={this.handleItemClick}>
+                <Menu.Item style={{'marginTop' : '30px'}} name='plus' active={activeItem === 'plus'} onClick={this.handleItemClick}>
                   <Icon name='plus' />
                 </Menu.Item>
 

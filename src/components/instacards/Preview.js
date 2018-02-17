@@ -1,5 +1,6 @@
 import React from 'react'
-import { Card, Feed } from 'semantic-ui-react'
+import { Card, Feed } from 'semantic-ui-react';
+import PlaceHolder from '../placeholders/PlaceHolder';
 
 class Preview extends React.Component {
 
@@ -10,7 +11,7 @@ class Preview extends React.Component {
       <Card fluid>
         <Card.Content>
           <Card.Header>
-             Preview
+             <PlaceHolder name="instagram"></PlaceHolder>
           </Card.Header>
         </Card.Content>
         <Card.Content>

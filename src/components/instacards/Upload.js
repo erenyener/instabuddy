@@ -12,11 +12,8 @@ const Upload = () => (
          </div>
       </Card.Header>
     </Card.Content>
-        <div>add
-
-        </div>
     <Card.Content>
-
+        Add
     </Card.Content>
   </Card>
 )
