@@ -1,0 +1,9 @@
+
+.logo{
+    background-repeat: no-repeat;
+}
+
+.logo-instagram{
+    background-image: url('./assets/instagram-logo.png');
+    height: 30px;
+}
