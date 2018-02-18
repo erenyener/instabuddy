@@ -13,17 +13,18 @@ class Preview extends React.Component {
       <Card fluid>
         <Card.Content>
           <Card.Header>
-             <Logo style={{'background-position':'center'}} name="instagram"></Logo>
+             <Logo style={{'backgroundPosition':'center'}} name="instagram"></Logo>
           </Card.Header>
         </Card.Content>
         <Card.Content>
-            <ReactPlaceholder color='#f5f5f5' type='media' rows={3} ready={false}></ReactPlaceholder>
+            <ReactPlaceholder children={false} color='#f5f5f5' type='media' rows={3} ready={false} />
         </Card.Content>
 
-        <ReactPlaceholder color='#f5f5f5' type='rect' ready={false} style={{ 'width': '%100', 'height': '300px', 'margin-right':'0px' }}></ReactPlaceholder>
+        <ReactPlaceholder children={false} color='#f5f5f5' type='rect' ready={false} style={{ 'width': '%100', 'height': '300px', 'marginRight':'0px' }} />
 
         <Card.Content>
-            <ReactPlaceholder color='#f5f5f5' type='TextBlock' rows={3} ready={false}></ReactPlaceholder>
+            <ReactPlaceholder children={false} color='#f5f5f5' type='textRow' ready={false} />
+            <ReactPlaceholder children={false} color='#f5f5f5' type='textRow' ready={false} />
         </Card.Content>
 
 

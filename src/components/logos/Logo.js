@@ -13,4 +13,5 @@ class Logo extends React.Component {
         );
     }
 }
+
 export default Logo
