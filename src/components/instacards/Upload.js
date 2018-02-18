@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card, Icon } from 'semantic-ui-react'
-import ImageUploader from '../ImageUploader/imageuploader';
 import MediaGallery from '../mediaGallery/MediaGallery';
 
 class Upload extends React.Component {
@@ -8,11 +7,6 @@ class Upload extends React.Component {
     constructor(props) {
         super(props);
         this.state = { pictures: [] };
-        this.onUpload = this.onUpload.bind(this);
-    }
-
-    onUpload(picture){
-        console.log(picture);
     }
 
     render () {
@@ -29,7 +23,7 @@ class Upload extends React.Component {
               </Card.Content>
               <Card.Content>
                   {this.props.medias && this.props.medias.length > 0 &&
-                      <MediaGallery medias={this.props.medias}></MediaGallery>
+                      <MediaGallery handleClick={this.props.onMediaSelect} medias={this.props.medias}></MediaGallery>
                   }
               </Card.Content>
             </Card>

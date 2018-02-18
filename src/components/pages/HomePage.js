@@ -10,8 +10,18 @@ import { fetchMedias } from '../../actions/media';
 
 class HomePage extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = { media: null };
+        this.onMediaSelect = this.onMediaSelect.bind(this);
+    }
+
     componentDidMount() {
         this.props.fetchMedias();
+    }
+
+    onMediaSelect(media){
+        this.setState({media: media});
     }
 
     render () {
@@ -19,13 +29,13 @@ class HomePage extends React.Component {
             <Grid stackable columns='equal'>
                 <Grid.Row>
                       <Grid.Column>
-                        <Upload medias={this.props.medias}></Upload>
+                        <Upload medias={this.props.medias} onMediaSelect={this.onMediaSelect}></Upload>
                       </Grid.Column>
                       <Grid.Column>
                           <Post></Post>
                       </Grid.Column>
                       <Grid.Column>
-                          <Preview></Preview>
+                          <Preview media={this.state.media}></Preview>
                       </Grid.Column>
 
                     </Grid.Row>
