@@ -1,1 +1,1 @@
-https://instabuddydev.herokuapp.com/
+http://instabuddydev.herokuapp.com/
